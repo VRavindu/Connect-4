@@ -13,6 +13,7 @@ public class AiPlayer extends Player {
 
         }while (!(col > -1 && col < 6) || !(board.isLegalMove(col)));
 
+
         if (board.isLegalMove(col)){
             board.updateMove(col, Piece.GREEN);
             board.getBoardUI().update(col, false);
